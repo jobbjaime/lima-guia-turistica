@@ -213,6 +213,36 @@
           margin-bottom: 30px;
         }
       }
+
+      .btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-link:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+.btn-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
     </style>
   </head>
 
@@ -237,24 +267,6 @@
         </div>
       </nav>
     </header>
-    <script>
-      /* Componente 1
-      Al entrar a mi pagina web quiero que al usar se le pregunte la edad, si el usuario es menor entonces vamos a mostrar un banner indicando que para visitar los lugares debe estar acompañado, en caso sea mayor de edad es necesario mostrar nada */
-      const edad = prompt("Ingrese su edad");
-
-      const edadNumber = parseInt(edad);
-
-      if (edadNumber < 18) {
-
-        document.write(
-          "<div class='banner'>Recuerda visitar los lugares con un adulto</div>"
-        );
-          
-        
-      }
-    </script>
-
-
     <!--foto de la plaza de armas-->
     <div class="contenedor-imagen">
       <img
@@ -271,6 +283,9 @@
       <div class="seccion-izquierda">
         <div class="info-lima">
           <h2>Centro Histórico de Lima</h2>
+
+          <a href="./interactivo.html" class="btn-link">Quiero interactuar</a>
+
           <p>
             El Centro Histórico de Lima, declarado Patrimonio Cultural de la
             Humanidad por la UNESCO, es el corazón histórico y cultural de la
